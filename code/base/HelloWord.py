@@ -8,3 +8,4 @@ def hehe():
 	return "浪费生命"
 
 print(what+hehe())
+
