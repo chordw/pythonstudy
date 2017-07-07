@@ -12,8 +12,8 @@ print('zz对应的value是：', people['zz'])
 print('34' in people)
 print(people.get('34', '没有这个元素'))  # 第二个参数是没有key该key时value的默认值
 
-# Set是一组key的集合，不存储value，由于dict的key不能重复，所以set里没有重复的元素
-# Set的创建::需要一个list作为输入集合
+# set是一组key的集合，不存储value，由于dict的key不能重复，所以set里没有重复的元素
+# set的创建::需要一个list作为输入集合
 # 重复元素在set中自动被过滤掉
 s = set([1, 2, 2, 3])
 s.add(3)
@@ -25,3 +25,7 @@ print(s)
 # 可以通过remove()方法删除set中的元素,,如果没有这个元素，会报KeyError的错误
 s.remove(4)
 print(s)
+
+# 遍历set
+for ss in s:
+    print(ss)
