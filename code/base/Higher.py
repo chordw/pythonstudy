@@ -47,3 +47,19 @@ print(isinstance(d, Iterable))
 e = enumerate(a)
 for i, v in e:
     print(i, v)
+
+# 列表生成式 list comprehensions 用来创建list
+f = [x * x for x in range(1, 11)]
+print('列表生成器：', f)
+print('列表生成器Ⅱ：', [m + n for m in 'abc' for n in 'edf'])
+
+import os
+
+# 当前目录下所有文件和文件夹的名字
+print([d for d in os.listdir('.')])
+print(os.listdir("."))
+
+g = ['JDAFa', 123, 'kkkEEEAD']
+print([isinstance(s, str) for s in g])
+
+# 生成器
