@@ -11,3 +11,13 @@ def add(x, y, f):
 
 
 print(add(3, -7, ff))
+
+# map()函数:返回的是一个迭代器
+# map()函数接收两个参数，一个是函数，一个是Iterable，map将传入的函数依次作用到序列的每个元素，并把结果作为新的Iterator返回
+print(map(abs, [1, -1, -2, 0, -111]))
+# map返回的Iterator是惰性序列
+print(list(map(abs, [1, -1, -2, 0, -111])))
+print(list(map(str, range(100))))
+
+# reduce()函数：
+
