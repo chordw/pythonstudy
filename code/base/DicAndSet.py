@@ -19,7 +19,7 @@ s = set([1, 2, 2, 3])
 s.add(3)
 print(s)
 
-# 可以通过add()方法向set中添加元素
+# 可以通过add()方法向set中添加元素wangxian.chord@gmai.com
 s.add(4)
 print(s)
 # 可以通过remove()方法删除set中的元素,,如果没有这个元素，会报KeyError的错误
@@ -29,3 +29,5 @@ print(s)
 # 遍历set
 for ss in s:
     print(ss)
+
+exit(999)
