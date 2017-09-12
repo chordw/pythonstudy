@@ -2,10 +2,10 @@
 
 # 切片操作符 Slice
 # 取list或者tuple中n-m位置的元素  n<=m
-a = list(range(5))  # 生成1-10的数列
+a = list(range(10))  # 生成1-10的数列
 
 # 取的是从list的从n到m索引位置的元素，包括n位置，但不包括m位置
-print(a[-11:11])
+print(a[0:11])
 
 # 迭代 for···in的方式完成迭代
 # for循环就是迭代

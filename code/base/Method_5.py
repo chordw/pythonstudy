@@ -1,6 +1,6 @@
 # 调用python内置的函数
 print(abs(-111))  # 求绝对值
-# 调用函数的时候，如果参数数量不对，会报TypeError
+# 调用函数的时候，如果参数数量不对，会报TypeError例如TypeError: abs() takes exactly one argument (2 given)
 # print(abs(1,2))
 # print(abs('a'))#参数格式不对
 
