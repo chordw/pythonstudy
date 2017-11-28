@@ -31,5 +31,6 @@ f = StringIO()
 f.write("你好吗")
 print(f.getvalue())
 
-from io import BytesIO
+import os
+print(os.environ)
 
