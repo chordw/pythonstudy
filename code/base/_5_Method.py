@@ -32,6 +32,8 @@ print(my_abs(-11))
 
 
 def fact(n):
+    if n <= 0:
+        return "输入的数值需要大于0"
     if n == 1:
         return 1
     return n * fact(n - 1)
