@@ -1,5 +1,5 @@
 import itchat
-
+# itchat https://github.com/littlecodersh/ItChat
 
 @itchat.msg_register(itchat.content.TEXT)
 def text_reply(msg):
