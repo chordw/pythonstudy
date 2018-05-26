@@ -10,4 +10,3 @@ while True:
     c, addr = server.accept()
     print("连接地址：", addr)
     server.send('123'.encode())
-    server.close()
