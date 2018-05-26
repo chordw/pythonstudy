@@ -1,4 +1,4 @@
-# 单行注释
+# <editor-fold desc="list">
 # 集合list的使用，list是一个可变的有序表
 
 # list的定义与赋值
@@ -50,6 +50,9 @@ print(classmates)
 
 # list中可以存储不同类型的数据：字符串类型，数值类型，boolean类型，list类型
 
+# </editor-fold>
+
+# <editor-fold desc="tuple">
 # 元组tuple的使用，，有序的集合,,一旦初始化后，数据不能再修改,,只是指向不变，
 # 比如说元组中有一个list，list内是可以变化的
 
@@ -58,3 +61,5 @@ meta = ('A', 'B', ['a', 'b'])
 # 元组的访问和list一样，只是没有了append(),insert(),pop(),这样的方法
 print("元组meta的长度：", (len(meta)))
 print(meta)
+
+# </editor-fold>

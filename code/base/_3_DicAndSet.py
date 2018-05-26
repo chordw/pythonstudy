@@ -1,3 +1,5 @@
+# <editor-fold desc="dict">
+
 # dict 字典以键值对的形式存储数据，，一个key只能对应一个value，，重复放入后面的会把前面的覆盖掉
 
 people = {'zz': 34, 'uu': 54}
@@ -15,6 +17,9 @@ if ('uu' in people):
 print(people.get("45"))
 print(people.get('34', '没有这个元素'))  # 第二个参数是没有key该key时value的默认值
 
+# </editor-fold>
+
+# <editor-fold desc="set">
 # set是一组key的集合，不存储value，由于dict的key不能重复，所以set里没有重复的元素
 # set的创建::需要一个list作为输入集合
 # 重复元素在set中自动被过滤掉
@@ -32,5 +37,4 @@ print(s)
 # 遍历set
 for ss in s:
     print(ss)
-
-exit(999)
+# </editor-fold>
