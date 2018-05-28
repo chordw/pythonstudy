@@ -1,3 +1,26 @@
+# <editor-fold desc="string">
+
+"""
+ASCII编码和Unicode编码的区别：
+ASCII编码是1个字节，而Unicode编码通常是2个字节
+"""
+
+# ord()函数获取字符的整数表示
+
+print("字符a对应int值：%d" % ord('a'))
+
+# chr()函数把编码转换为对应的字符
+
+print("97对应的字符是：%s" % chr(97))
+
+# len()函数获取str的长度、字节的长度
+print(len('qvc'))
+print(len("你".encode()))
+print(len("羲".encode()))
+print(len(b"a"))
+
+# </editor-fold>
+
 # <editor-fold desc="dict">
 
 # dict 字典以键值对的形式存储数据，，一个key只能对应一个value，，重复放入后面的会把前面的覆盖掉
