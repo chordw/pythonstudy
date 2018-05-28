@@ -1,10 +1,26 @@
-def applicate(environ,start_response):
-    start_response('200 OK',[('Content-Type','text/html')])
-    return [b'<h1>Hello,World!</h1>']
+import logging
 
-from wsgiref.simple_server import make_server
+logging.basicConfig(level=logging.INFO)
 
-httd = make_server('',8000,applicate)
-print('serving http on port 8000')
+import asyncio, os, json, time
+from datetime import datetime
 
-httd.serve_forever()
+from aiohttp import web
+
+
+def index(request):
+    return web.Response(body=b'<h1>Awesome</h1>')
+
+
+@asyncio.coroutine
+def init(loop):
+    app = web.Application(loop=loop)
+    app.router.add_route('GET', '/', index)
+    srv = yield from loop.create_server(app.make_handler(), '127.0.0.1', 9000)
+    logging.info('server started at http://127.0.0.1:9000...')
+    return srv
+
+
+loop = asyncio.get_event_loop()
+loop.run_until_complete(init(loop))
+loop.run_forever()
